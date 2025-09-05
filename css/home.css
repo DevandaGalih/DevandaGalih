@@ -1,0 +1,72 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+body {
+  background-color: #fdfdfd;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 8rem;
+  align-items: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 5.7rem;
+}
+
+nav ul li a {
+  color: #080036;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #15008d;
+  border-bottom: 3px solid #15008d;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+/* Isi */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 4rem;
+  margin-top: 0rem;
+}
+
+.container .left-cont h1 {
+  font-size: 7rem;
+  color: #080036;
+  cursor: pointer;
+}
+
+.container .right-cont img {
+  width: 75rem;
+  height: 50rem;
+  border-radius: 8rem;
+  box-shadow: black 2px 2px 8px;
+}

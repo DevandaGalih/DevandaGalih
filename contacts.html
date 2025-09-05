@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" type="x-icon" href="image\KV.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV DEVANDA</title>
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/contacts.css" />
+    <!-- Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- My Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="container">
+      <div class="logo">
+        <img src="image\KV.png" alt="LOGO" width="100px" />
+      </div>
+      <ul>
+        <li>
+          <a href="index.html">HOME</a>
+        </li>
+        <li>
+          <a href="abilities.html">ABILITIES</a>
+        </li>
+        <li>
+          <a href="contacts.html">CONTACTS</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ISI -->
+
+    <div class="container-fill">
+      <div class="title">
+        <h1>CONTACT FORM</h1>
+      </div>
+      <div class="fill-form">
+        <form onsubmit="sendMessage()">
+          <div class="filler-name">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Your Name" required />
+          </div>
+          <br />
+          <div class="filler-email">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+          <br />
+          <div class="filler-message">
+            <label for="message">Your Message</label>
+            <textarea
+              id="message"
+              cols="30"
+              rows="4"
+              placeholder="Message...."
+              required
+            ></textarea>
+          </div>
+          <div class="send-button">
+            <button class="button" type="Submit">SEND</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="footer-cont">
+        <div class="social-icons">
+          <a href="https://youtube.com/@kaivanz666?si=YzzDkVyeXmePtxd0"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/devanda_galih?igsh=MXFkand1ZGQ2Z21pNw%3D%3D&utm_source=qr"
+            ><i class="fa-brands fa-instagram fa-beat-fade"></i
+          ></a>
+          <a href="https://wa.me/081252879901"
+            ><i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          Copyright &copy;2025; Designed by <a href="index.html">DEVANDA</a>
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      function sendMessage() {
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        const url =
+          "https://api.whatsapp.com/send?phone=6281252879901&text=Halo%20Admin%2C%0ASaya%20" +
+          name +
+          "%0AEmail%20saya%20*" +
+          email +
+          "*%0A%0APesan%20%3A%20%0A" +
+          message +
+          "";
+
+        window.open(url);
+      }
+    </script>
+  </body>
+</html>
