@@ -119,6 +119,12 @@ input:focus {
   font-size: 1.5rem;
 }
 
+textarea:focus {
+  border: 2px solid #080036;
+  outline: 2.5px solid #080036;
+
+  font-size: 1.5rem;
+}
 /* button */
 
 .send-button {
